@@ -51,7 +51,7 @@ Xguess =  random.randrange(X)
 Yguess = random.randrange(Y)
 print Xguess
 print Yguess
-for i in xrange(828):
+for i in xrange(41):
 	good = 0
 	bad = 0
 	if Z[Xguess,Yguess]<20.0:
@@ -60,7 +60,7 @@ for i in xrange(828):
 		good = .4
 		bad = .35
 	else:
-		good = 0
+		good = .01
 		bad = 1
 	likelyhood = MakeProbCircle(Xguess,Yguess,good,bad)
 	viewed = viewed * MakeProbCircle(Xguess,Yguess,good,bad)
