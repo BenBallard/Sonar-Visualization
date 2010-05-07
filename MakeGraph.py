@@ -26,7 +26,7 @@ for r in range(y-1):
 yArray = arange(y)
 for r in range(x-1):
 	yArray = vstack((yArray,arange(y)))	
-ax.plot_surface(xArray,yArray,f,rstride=5,cstride=5,cmap=cm.jet)
+ax.plot_surface(xArray,yArray,f,rstride=1,cstride=1,cmap=cm.jet)
 
 #ax.plot_surface(xArray,yArray,f,cmap=cm.jet)
 
